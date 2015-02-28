@@ -6,7 +6,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.7'
 
 # Frontend
+gem 'compass-rails'
 gem 'sass-rails'
+gem 'foundation-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
