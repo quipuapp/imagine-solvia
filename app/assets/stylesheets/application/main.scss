@@ -11,6 +11,7 @@
 body{
   background-color: #eee;
   font-family: ITCFranklinGothic LT Book;
+  padding-top: 60px;
 }
 h1,h2,h3,h4,h5,h6{
   font-family: ITCFranklinGothic LT Book;
@@ -19,6 +20,10 @@ h1,h2,h3,h4,h5,h6{
   max-width: initial;
 }
 .header-section{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
   padding: 20px 0;
   background-color: #008ac9;
   background-color: white;
