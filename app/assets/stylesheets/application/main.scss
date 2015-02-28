@@ -1,4 +1,13 @@
 //  TODO add the webfont
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
 body{
   background-color: #eee;
   font-family: ITCFranklinGothic LT Book;
@@ -41,11 +50,13 @@ h1,h2,h3,h4,h5,h6{
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
     border-radius: 2px;
     .freelancers-list-item{
+      position: relative;
       background-color: white;
       border-bottom: 1px solid #ddd;
       padding: 12px 24px;
       display: table;
       width: 100%;
+      @include transition(all, 0.2s, ease-in-out);
       .photo{
         display: table-cell;
         max-width: 110px;
@@ -61,6 +72,12 @@ h1,h2,h3,h4,h5,h6{
       .price{
         display: table-cell;
         text-align: right;
+      }
+      &:hover{
+        @media screen and(min-width: 700px){
+          box-shadow: 0 2px 20px 0 rgba(0,0,0,0.2);
+          z-index: 1;
+        }
       }
     }
   }
