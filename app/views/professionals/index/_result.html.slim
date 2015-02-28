@@ -19,8 +19,12 @@
       span
         =' number_to_currency(professional.hourly_price)
         | / h
+
   .more-info
     .reviews-section.row
-      .medium-12.columns Valoraciones
-      .medium-4.columns Name
-      .medium-8.columns Comment
+      - professional.impressions.each do |impression|
+        .medium-12.columns
+          - impression.rating.round.times do
+            = image_tag "star.svg"
+        .medium-4.columns= impression.client.name
+        .medium-8.columns= impression.comment
