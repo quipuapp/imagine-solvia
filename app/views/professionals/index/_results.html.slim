@@ -9,5 +9,8 @@
 - content_for :custom_js do
   javascript:
     $('.freelancers-list-item').click(function(){
-      $(this).toggleClass('expanded');
+      if(!$(this).hasClass('expanded')){
+        $('.expanded').removeClass('expanded');
+        $(this).addClass('expanded');
+      }
     });
