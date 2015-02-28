@@ -7,6 +7,8 @@
       .search-box
         = text_field_tag :name, @term, id: 'autocomplete', placeholder: 'Type the name here...'
     .medium-3.columns
+      .head-user
+        = image_tag "head-user.png"
 
 - content_for :custom_js do
   javascript:
