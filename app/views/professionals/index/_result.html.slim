@@ -9,8 +9,7 @@
         = image_tag "star.svg"
   .response
     span
-      / = distance_of_time_in_words(professional.average_response_time * 60)
-      | 30 m
+      = short_distance_for(professional.average_response_time * 60)
   .distance
     = image_tag "loc.svg"
     span
