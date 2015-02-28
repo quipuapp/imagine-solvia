@@ -4,6 +4,8 @@
       = image_tag "professionals/#{professional.name.downcase}.png"
     .name
       span= professional.complete_name
+    .titles
+      span= professional.specialties.pluck(:name).to_sentence.capitalize
     .rating
       .stars
         - professional.rating.round.times do
@@ -26,5 +28,5 @@
         .medium-12.columns
           - impression.rating.round.times do
             = image_tag "star.svg"
-        .medium-4.columns= impression.client.name
+        .medium-4.columns= impression.client.complete_name
         .medium-8.columns= impression.comment
