@@ -4,4 +4,4 @@
     - clazz = (sort_type == @sort_type) ? 'active' : ''
     - url_params = { sort_type: sort_type }
     - url_params.merge!(specialty_id: @specialty.id) if @specialty.present?
-    .filter-item= link_to "Sort by #{sort_name}", url_params, class: clazz
+    .filter-item class=clazz = link_to "Sort by #{sort_name}", url_params
