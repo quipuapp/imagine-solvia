@@ -171,11 +171,6 @@ h1,h2,h3,h4,h5,h6{
         }
       }
       &.expanded{
-        .more-info{
-          display: block;
-        }
-      }
-      &.expanded{
         .intro-info{
           background: none;
         }
@@ -199,13 +194,16 @@ h1,h2,h3,h4,h5,h6{
 //   opacity: 1;
 // }
 .more-info{
-  display: none;
-  overflow: hidden;
+  max-height: 0;
+  overflow: scroll;
+  @include transition(all, 0.2s, ease);
 }
 .freelancers-list-item{
   &.expanded{
     .more-info{
-      display: block;
+      height: auto;
+      min-height: 200px;
+      @include transition(all, 0.2s, ease);
     }
   }
 }
