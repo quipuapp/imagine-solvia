@@ -4,8 +4,7 @@
       = image_tag "professionals/#{professional.name.downcase}.png"
     .name
       span= professional.complete_name
-    .titles
-      span= professional.specialties.pluck(:name).to_sentence.capitalize
+      span.titles= professional.specialties.pluck(:name).to_sentence.capitalize
     .rating
       .stars
         - professional.rating.round.times do
