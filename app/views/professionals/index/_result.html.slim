@@ -25,7 +25,8 @@
     .reviews-section.row
       - professional.impressions.each do |impression|
         .medium-12.columns
+        .medium-3.columns= impression.client.complete_name
+        .medium-9.columns.comment-box
           - impression.rating.round.times do
             = image_tag "star.svg"
-        .medium-4.columns= impression.client.complete_name
-        .medium-8.columns= impression.comment
+          p.comment= impression.comment

@@ -173,12 +173,27 @@ h1,h2,h3,h4,h5,h6{
           }
         }
       }
-      .reviews-section{
-        padding: 30px;
-      }
     }
   }
 }
+.more-info{
+  height: 0;
+  overflow: hidden;
+  @include transition(all, 0.2s, ease);
+}
+.freelancers-list-item{
+  &.expanded{
+    .more-info{
+      height: 300px;
+    }
+  }
+}
+.reviews-section{
+  padding: 30px;
+}
 .review-item{
   border-bottom: 1px solid #ddd;
+}
+.comment-box{
+  border-left: 1px solid #ccc;
 }
