@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20150228155701) do
     t.integer  "distance"
     t.integer  "average_response_time"
     t.integer  "hourly_price"
-    t.decimal  "rating",                precision: 10, scale: 0
+    t.decimal  "rating"
   end
 
   create_table "professionals_specialties", force: true do |t|

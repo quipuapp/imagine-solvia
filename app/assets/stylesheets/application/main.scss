@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6{
   margin: 0 auto;
   margin-top: 40px;
   .freelancers-list{
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
     border-radius: 2px;
     .freelancers-list-item{
       position: relative;
@@ -56,7 +56,7 @@ h1,h2,h3,h4,h5,h6{
       padding: 12px 24px;
       display: table;
       width: 100%;
-      @include transition(all, 0.2s, ease-in-out);
+      @include transition(all, 0.2s, ease);
       .photo{
         display: table-cell;
         max-width: 110px;
