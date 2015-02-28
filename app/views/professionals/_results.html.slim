@@ -3,11 +3,12 @@
     .medium-12.columns
       .freelancers-list
         - 7.times do
-          .freelancers-list-item.row
-            .medium-3.columns
-              | foto
-            .medium-6.columns
-              .name
+          .freelancers-list-item
+            .photo
+              = image_tag "freelancers/f1.png"
+            .name
+              span
                 | Name Surname
-            .medium-3.columns
-              | 30€ / h
+            .price
+              span
+                | 30€ / h
