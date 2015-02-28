@@ -42,6 +42,25 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 100;
   }
 }
+.filters-section{
+  .filter-item{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 4px solid transparent;
+    @include transition(all, 0.2s, ease);
+    a{
+      color: inherit;
+      width: 100%;
+      display: block;
+    }
+    &:hover{
+      border-color: #008ac9;
+      color: #008ac9;
+    }
+  }
+}
 .freelancers-list-section{
   max-width: 900px;
   margin: 0 auto;

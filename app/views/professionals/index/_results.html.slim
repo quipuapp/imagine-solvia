@@ -1,6 +1,7 @@
 .freelancers-list-section
   .row.row-full
     .medium-12.columns
+      = render 'professionals/index/filter'
       .freelancers-list
         - @professionals.each do |professional|
           = render 'professionals/index/result', professional: professional
