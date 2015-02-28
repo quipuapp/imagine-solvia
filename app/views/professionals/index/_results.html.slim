@@ -11,3 +11,9 @@
             .price
               =' number_to_currency(professional.hourly_price)
               | / hour
+
+- content_for :custom_js do
+  javascript:
+    $('.freelancers-list-item').click(function(){
+      $(this).toggleClass('expanded');
+    });
