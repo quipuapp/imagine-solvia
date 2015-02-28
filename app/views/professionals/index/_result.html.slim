@@ -18,8 +18,8 @@
         = number_to_human(professional.distance, units: :distance)
     .price
       span
-        =' number_to_currency(professional.hourly_price)
-        | / h
+        = number_to_currency(professional.hourly_price)
+        | /h
     .bg-helper
 
   .more-info
