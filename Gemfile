@@ -12,7 +12,8 @@ gem 'foundation-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
-gem 'turbolinks'
+gem 'jquery-ui-rails'
+gem 'rails4-autocomplete'
 
 # Markup
 gem 'slim-rails'

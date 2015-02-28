@@ -1,0 +1,15 @@
+h1 Specialties
+= text_field_tag :name, '', id: 'autocomplete', placeholder: 'Type the name here...'
+
+- content_for :custom_js do
+  javascript:
+    $(document).ready(function(){
+      var autocompleteInput = $('input#autocomplete');
+      autocompleteInput.autocomplete({
+        source: "#{ escape_javascript autocomplete_specialties_path }.json",
+        select: function(event, ui){
+          window.location.href = ui.item.value;
+        }
+      });
+      autocompleteInput.focus();
+    });
