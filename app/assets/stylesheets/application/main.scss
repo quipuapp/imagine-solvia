@@ -107,59 +107,64 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 2px;
     margin-bottom: 40px;
     .freelancers-list-item{
-      position: relative;
-      background-color: white;
-      border-bottom: 1px solid #ddd;
-      padding: 12px 24px;
-      display: table;
-      width: 100%;
-      cursor: pointer;
-      @include transition(all, 0.2s, ease);
-      .photo{
-        display: table-cell;
-        max-width: 110px;
-        width: 90px;
-      }
-      .name{
-        display: table-cell;
-        font-weight: 700;
-        display: table-cell;
-        span{
-          text-align: left;
-        }
-      }
-      .rating{
-        display: table-cell;
-        width: 90px;
-        top: -1px;
+      .intro-info{
         position: relative;
-        text-align: right;
-      }
-      .response{
-        display: table-cell;
-        width: 9%;
-        text-align: right;
-        color: #999;
-      }
-      .distance{
-        display: table-cell;
-        text-align: right;
-        color: #999;
-        width: 12%;
-        span{
-          margin-left: 7px;
+        background-color: white;
+        border-bottom: 1px solid #ddd;
+        padding: 12px 24px;
+        display: table;
+        width: 100%;
+        cursor: pointer;
+        @include transition(all, 0.2s, ease);
+        .photo{
+          display: table-cell;
+          max-width: 110px;
+          width: 90px;
+        }
+        .name{
+          display: table-cell;
+          font-weight: 700;
+          display: table-cell;
+          span{
+            text-align: left;
+          }
+        }
+        .rating{
+          display: table-cell;
+          width: 90px;
+          top: -1px;
+          position: relative;
+          text-align: right;
+        }
+        .response{
+          display: table-cell;
+          width: 9%;
+          text-align: right;
+          color: #999;
+        }
+        .distance{
+          display: table-cell;
+          text-align: right;
+          color: #999;
+          width: 12%;
+          span{
+            margin-left: 7px;
+          }
+        }
+        .price{
+          display: table-cell;
+          text-align: right;
+          width: 14%;
+        }
+        &:hover{
+          @media screen and(min-width: 700px){
+            box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+          }
         }
       }
-      .price{
-        display: table-cell;
-        text-align: right;
-        width: 14%;
-      }
-      &:hover{
-        @media screen and(min-width: 700px){
-          box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
-          z-index: 1;
-        }
+      .reviews-section{
+        padding: 30px;
       }
     }
   }

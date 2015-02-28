@@ -1,20 +1,26 @@
 .freelancers-list-item
-  .photo
-    = image_tag "professionals/#{professional.name.downcase}.png"
-  .name
-    span= professional.complete_name
-  .rating
-    .stars
-      - professional.rating.round.times do
-        = image_tag "star.svg"
-  .response
-    span
-      = short_distance_for(professional.average_response_time * 60)
-  .distance
-    = image_tag "loc.svg"
-    span
-      = number_to_human(professional.distance, units: :distance)
-  .price
-    span
-      =' number_to_currency(professional.hourly_price)
-      | / h
+  .intro-info
+    .photo
+      = image_tag "professionals/#{professional.name.downcase}.png"
+    .name
+      span= professional.complete_name
+    .rating
+      .stars
+        - professional.rating.round.times do
+          = image_tag "star.svg"
+    .response
+      span
+        = short_distance_for(professional.average_response_time * 60)
+    .distance
+      = image_tag "loc.svg"
+      span
+        = number_to_human(professional.distance, units: :distance)
+    .price
+      span
+        =' number_to_currency(professional.hourly_price)
+        | / h
+  .more-info
+    .reviews-section.row
+      .medium-12.columns Valoraciones
+      .medium-4.columns Name
+      .medium-8.columns Comment
