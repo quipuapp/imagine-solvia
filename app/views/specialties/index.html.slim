@@ -9,6 +9,7 @@ h1 Specialties
         source: "#{ escape_javascript autocomplete_specialties_path }.json",
         select: function(event, ui){
           window.location.href = ui.item.value;
+          $('input#autocomplete').remove();
         }
       });
       autocompleteInput.focus();
