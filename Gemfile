@@ -19,6 +19,7 @@ gem 'slim-rails'
 
 # Database
 gem 'mysql2'
+gem 'sqlite3'
 
 # Deployment
 gem 'capistrano'
