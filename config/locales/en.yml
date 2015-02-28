@@ -4,9 +4,9 @@ en:
       one: "centimeter"
       other: "centimeters"
     unit:
-      one: "meter"
-      other: "meters"
+      one: "m"
+      other: "m"
     thousand:
-      one: "kilometer"
-      other: "kilometers"
+      one: "km"
+      other: "km"
     billion: "gazillion-distance"

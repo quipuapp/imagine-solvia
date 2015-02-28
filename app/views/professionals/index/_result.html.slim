@@ -9,8 +9,10 @@
         = image_tag "star.svg"
   .response
     span
-      = distance_of_time_in_words(professional.average_response_time * 60)
+      / = distance_of_time_in_words(professional.average_response_time * 60)
+      | 30 m
   .distance
+    = image_tag "loc.svg"
     span
       = number_to_human(professional.distance, units: :distance)
   .price
