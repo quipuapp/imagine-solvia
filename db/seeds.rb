@@ -119,7 +119,7 @@ create_professional!('Klodian', 'Duro', 2800, 30, 10, :painter) do |p|
   create_impression!(p, :julia, 4, "We were waiting something amazing but no, he paint the house like we wanted. Boring but OK.")
 end
 
-create_professional!('Abraham López', 'Hans', 1000, 49, 40, :painter) do |p|
+create_professional!('Abraham', 'López', 1000, 49, 40, :painter) do |p|
   create_impression!(p, :ruben, 5, "We asked him to paint our house blue but he painted green, but the result was nice. He's an artist.")
   create_impression!(p, :emili, 2, "We wanted everything white and he painted purple. A little but dark for us, but he convinced us that it was better in that way, so is ok for us. He is very tidy and fast.")
   create_impression!(p, :asier, 3, "Amazing. He painted us the Gernika in the kid's room. It's a little bit creepy but it's cool. What an artist.")
@@ -201,7 +201,7 @@ create_professional!('Ander', 'Maguregui', 2100, 50, 18, :cleaning) do |p|
 end
 
 # Professionals: cleaning
-create_professional!('Núria', 'López', 2000, 25, 17, :nanny) do |p|
+create_professional!('Nuria', 'López', 2000, 25, 17, :nanny) do |p|
   create_impression!(p, :prez, 4, "Charming, tidy, honest, she's cool.")
   create_impression!(p, :jason, 3, "Tidy and honest.")
 end

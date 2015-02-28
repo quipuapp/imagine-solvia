@@ -3,14 +3,7 @@
     .medium-12.columns
       .freelancers-list
         - @professionals.each do |professional|
-          .freelancers-list-item
-            .photo
-              = image_tag "freelancers/f1.png"
-            .name
-              span= professional.complete_name
-            .price
-              =' number_to_currency(professional.hourly_price)
-              | / hour
+          = render 'professionals/index/result', professional: professional
 
 - content_for :custom_js do
   javascript:
