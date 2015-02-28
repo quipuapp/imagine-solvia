@@ -1,5 +1,36 @@
 //  TODO add the webfont
 
+@font-face {
+    font-family: 'LTe50086';
+    src: url('fonts/LTe50086.eot');
+    src: url('fonts/LTe50086.eot') format('embedded-opentype'),
+         url('fonts/LTe50086.woff2') format('woff2'),
+         url('fonts/LTe50086.woff') format('woff'),
+         url('fonts/LTe50086.ttf') format('truetype'),
+         url('fonts/LTe50086.svg#LTe50086') format('svg');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'LTe54064';
+    src: url('fonts/LTe54064.eot');
+    src: url('fonts/LTe54064.eot') format('embedded-opentype'),
+         url('fonts/LTe54064.woff2') format('woff2'),
+         url('fonts/LTe54064.woff') format('woff'),
+         url('fonts/LTe54064.ttf') format('truetype'),
+         url('fonts/LTe54064.svg#LTe54064') format('svg');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'LTe50088';
+    src: url('fonts/LTe50088.eot');
+    src: url('fonts/LTe50088.eot') format('embedded-opentype'),
+         url('fonts/LTe50088.woff2') format('woff2'),
+         url('fonts/LTe50088.woff') format('woff'),
+         url('fonts/LTe50088.ttf') format('truetype'),
+         url('fonts/LTe50088.svg#LTe50088') format('svg');
+    font-weight: 700;
+}
+
 @mixin transition($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
     -moz-transition: $transition-property $transition-time $method;
@@ -32,11 +63,15 @@ h1,h2,h3,h4,h5,h6{
     input{
       margin: 0;
       font-size: 24px;
-      padding: 20px 15px;
+      padding: 20px 15px 20px 42px;
       border: 0;
       background-color: #eee;
       border-radius: 2px;
       box-shadow: none;
+      background-image: url("search-ic.png");
+      background-repeat: no-repeat;
+      background-position: left 12px center;
+      
     }
   }
 }
