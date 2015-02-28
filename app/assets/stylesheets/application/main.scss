@@ -247,6 +247,11 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
-.loader-wrapper{
+.static-loading{
   background-color: #E2E5E6;
+}
+.loader-wrapper{
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
 }
