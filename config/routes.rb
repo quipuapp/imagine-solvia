@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     get :autocomplete, on: :collection
   end
 
-  resources :professionals, only: :index
+  resources :professionals, only: [:index, :show]
 
   root to: 'static#home'
 end

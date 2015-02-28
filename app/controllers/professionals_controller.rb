@@ -7,4 +7,8 @@ class ProfessionalsController < ApplicationController
                        Professional.all
                      end
   end
+
+  def show
+    @professional = Professional.find(params[:id])
+  end
 end
