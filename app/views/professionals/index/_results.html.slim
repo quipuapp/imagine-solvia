@@ -9,8 +9,7 @@
 - content_for :custom_js do
   javascript:
     $('.freelancers-list-item').click(function(){
-      if(!$(this).hasClass('expanded')){
-        $('.expanded').removeClass('expanded');
-        $(this).addClass('expanded', 500);
-      }
+      var isNotMe = !$(this).hasClass('expanded');
+      $('.expanded').removeClass('expanded');
+      if(isNotMe) $(this).addClass('expanded', 500);
     });
