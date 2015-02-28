@@ -7,7 +7,7 @@ class ProfessionalsController < ApplicationController
                        Professional.all
                      end
 
-    @sort_types = %w{ rating distance best_price response_time }
+    @sort_types = %w{ rating response_time distance best_price }
 
     @sort_type = params[:sort_type]
     unless @sort_types.include?(@sort_type)

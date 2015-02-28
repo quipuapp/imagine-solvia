@@ -1,6 +1,6 @@
 .filters-section
   - @sort_types.each do |sort_type|
-    - sort_name = sort_type.to_s.gsub(/_/, '')
+    - sort_name = sort_type.to_s.gsub(/_/, ' ')
     - clazz = (sort_type == @sort_type) ? 'active' : ''
     - url_params = { sort_type: sort_type }
     - url_params.merge!(specialty_id: @specialty.id) if @specialty.present?
