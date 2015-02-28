@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
+gem 'mysql2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -38,3 +39,16 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+# Deployment
+gem 'capistrano'
+gem 'capistrano_colors', :require => false
+gem 'rvm-capistrano'
+gem 'capistrano-unicorn', :require => false
+
+# * Production
+group :production, :staging do
+  gem 'unicorn'
+  gem 'unicorn-worker-killer'
+  gem 'rollbar'
+end
