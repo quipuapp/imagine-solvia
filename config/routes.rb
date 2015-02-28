@@ -3,10 +3,11 @@ Rails.application.routes.draw do
     post :login, on: :collection
   end
 
-  resources :specialties, only: :index do
+  resources :specialties, only: :none do
     get :autocomplete, on: :collection
-    resources :professionals, only: :index
   end
+
+  resources :professionals, only: :index
 
   root to: 'static#home'
 end

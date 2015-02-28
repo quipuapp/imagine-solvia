@@ -1,5 +1,12 @@
-h1 Specialties
-= text_field_tag :name, '', id: 'autocomplete', placeholder: 'Type the name here...'
+.header-section
+  .row.row-full
+    .medium-3.columns
+      .logo
+        = image_tag "logo.svg"
+    .medium-6.columns
+      .search-box
+        = text_field_tag :name, @term, id: 'autocomplete', placeholder: 'Type the name here...'
+    .medium-3.columns
 
 - content_for :custom_js do
   javascript:

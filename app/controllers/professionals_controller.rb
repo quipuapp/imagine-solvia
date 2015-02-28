@@ -1,6 +1,8 @@
 class ProfessionalsController < ApplicationController
   def index
-    @specialty = Specialty.find(params[:specialty_id])
-    @professionals = @specialty.professionals
+    if @specialty = Specialty.find_by_id(params[:specialty_id])
+      @professionals = @specialty.professionals
+      @term = @specialty.name
+    end
   end
 end
