@@ -177,7 +177,7 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 .more-info{
-  height: 0;
+  display: block;
   overflow: hidden;
   @include transition(all, 0.2s, ease);
 }
