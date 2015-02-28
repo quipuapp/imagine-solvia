@@ -220,3 +220,11 @@ create_professional!('Iris', 'Villaescusa', 1200, 20, 19, :nanny) do |p|
   create_impression!(p, :john, 4, "A little bit rude, but ok.")
   create_impression!(p, :jan, 1, "Wooow, he's amazing!! I recommend him.")
 end
+
+# More specialties
+specialties = Specialty.all
+Professional.all.each do |professional|
+  (specialties - professional.specialties).shuffle.take(1 + rand(2)).each do |specialty|
+    professional.specialties << specialty
+  end
+end
