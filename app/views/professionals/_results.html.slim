@@ -2,12 +2,12 @@
   .row.row-full
     .medium-12.columns
       .freelancers-list
-        - 7.times do
+        - @professionals.each do |professional|
           .freelancers-list-item.row
             .medium-3.columns
               | foto
             .medium-6.columns
-              .name
-                | Name Surname
+              .name= professional.complete_name
             .medium-3.columns
-              | 30€ / h
+              =' number_to_currency(professional.hourly_price)
+              | / hour
