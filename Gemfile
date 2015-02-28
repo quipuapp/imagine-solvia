@@ -32,6 +32,7 @@ gem 'capistrano-unicorn', :require => false
 group :development do
   gem 'spring'
   gem 'quiet_assets'
+  gem 'pry-rails'
 end
 
 # Production
