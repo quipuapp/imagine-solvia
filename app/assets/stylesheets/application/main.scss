@@ -255,3 +255,35 @@ h1,h2,h3,h4,h5,h6{
   margin: 0 auto;
   text-align: center;
 }
+.static-landing{
+  background-image: url("landing-bg.jpg")
+}
+.landing-wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 100px;
+  h2{
+    max-width: 640px;
+    color: white;
+    line-height: 42px;
+    font-size: 32px;
+    margin: 30px 0;
+  }
+}
+.landing-logo{
+  img{
+    width: 300px;
+  }
+}
+.go-home-button{
+  a{
+    background-color: white;
+    padding: 10px 15px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 2px;
+    font-size: 24px;
+    color: #008ac9;
+    margin-top: 20px;
+    display: inline-block;
+  }
+}
