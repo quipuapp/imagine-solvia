@@ -1,13 +1,10 @@
 Rails.application.routes.draw do
-  resources :clients, only: :none do
-    post :login, on: :collection
-  end
-
   resources :specialties, only: :none do
     get :autocomplete, on: :collection
   end
 
   resources :professionals, only: [:index, :show]
 
-  root to: 'static#home'
+  get "loading" => "static#loading"
+  root to: 'static#landing'
 end
