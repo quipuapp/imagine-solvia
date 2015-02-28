@@ -3,3 +3,9 @@
   h1 Welcome Home
   br
   = image_tag "yeahouse.gif"
+
+- content_for :custom_js do
+  javascript:
+    setTimeout(function(){
+      window.location.href = "#{ raw professionals_path }";
+    }, 2000);
