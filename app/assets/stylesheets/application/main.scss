@@ -1,1 +1,42 @@
-//  @hihayk DO YOUR FUCKIN' AWESOME MAGIC HERE
+//  TODO add the webfont
+body{
+  background-color: #eee;
+  font-family: ITCFranklinGothic LT Book;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: ITCFranklinGothic LT Book; 
+}
+.row-full{
+  max-width: initial;
+}
+.header-section{
+  padding: 20px 0;
+  background-color: #008ac9;
+  .search-box{
+    input{
+      margin: 0;
+    }
+  }
+}
+.logo-text{
+  font-weight: 700;
+  font-size: 24px;
+  .plus-label{
+    font-weight: 100;
+  }
+}
+.freelancers-list-section{
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+  .freelancers-list{
+    .freelancers-list-item{
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+      .name{
+        font-weight: 700;
+      }
+    }
+  }
+}
