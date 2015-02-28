@@ -42,8 +42,8 @@ ActiveRecord::Schema.define(version: 20150228123225) do
     t.string "specialty_id"
   end
 
-  add_index "professionals_specialties", ["professional_id"], name: "index_professionals_specialties_on_professional_id", using: :btree
-  add_index "professionals_specialties", ["specialty_id"], name: "index_professionals_specialties_on_specialty_id", using: :btree
+  add_index "professionals_specialties", ["professional_id"], name: "index_professionals_specialties_on_professional_id"
+  add_index "professionals_specialties", ["specialty_id"], name: "index_professionals_specialties_on_specialty_id"
 
   create_table "specialties", force: true do |t|
     t.string "name"
