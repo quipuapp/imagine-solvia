@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150228123225) do
+ActiveRecord::Schema.define(version: 20150228155701) do
 
   create_table "clients", force: true do |t|
     t.string   "name"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20150228123225) do
     t.integer  "distance"
     t.integer  "average_response_time"
     t.integer  "hourly_price"
+    t.decimal  "rating",                precision: 10, scale: 0
   end
 
   create_table "professionals_specialties", force: true do |t|
