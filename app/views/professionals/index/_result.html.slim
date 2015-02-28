@@ -3,13 +3,17 @@
     = image_tag "professionals/#{professional.name.downcase}.png"
   .name
     span= professional.complete_name
+  .rating
+    .stars
+      - professional.rating.round.times do
+        = image_tag "star.svg"
+  .response
+    span
+      = distance_of_time_in_words(professional.average_response_time * 60)
+  .distance
+    span
+      = number_to_human(professional.distance, units: :distance)
   .price
     span
       =' number_to_currency(professional.hourly_price)
       | / h
-  .distance
-    span
-      = number_to_human(professional.distance, units: :distance)
-  .response
-    span
-      = distance_of_time_in_words(professional.average_response_time * 60)
