@@ -195,14 +195,14 @@ h1,h2,h3,h4,h5,h6{
 // }
 .more-info{
   max-height: 0;
-  overflow: scroll;
+  overflow-y: scroll;
   @include transition(all, 0.2s, ease);
 }
 .freelancers-list-item{
   &.expanded{
     .more-info{
       height: auto;
-      min-height: 200px;
+      min-height: 250px;
       @include transition(all, 0.2s, ease);
     }
   }
@@ -215,4 +215,34 @@ h1,h2,h3,h4,h5,h6{
 }
 .comment-box{
   border-left: 1px solid #ccc;
+}
+.action-section{
+  margin-top: 20px;
+  text-align: right;
+    .rating, .talk, .hire{
+      padding: 8px 15px;
+      border-radius: 2px;
+      margin-left: -1px;
+      margin-bottom: 0;
+    }
+    .rating{
+      background-color: white;
+      border: 1px solid #ddd;
+      color: #008ac9;
+    }
+    .talk{
+      background-color: white;
+      border: 1px solid #ddd;
+      color: #008ac9;
+    }
+    .hire{
+      border: 1px solid #008ac9;
+      background-color: #008ac9;
+    }
+  .actions-wrapper{
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
 }
