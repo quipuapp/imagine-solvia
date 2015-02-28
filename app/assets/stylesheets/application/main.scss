@@ -63,7 +63,7 @@ h1,h2,h3,h4,h5,h6{
     input{
       margin: 0;
       font-size: 24px;
-      padding: 20px 15px 20px 42px;
+      padding: 22px 15px 22px 42px;
       border: 0;
       background-color: #eee;
       border-radius: 2px;
@@ -172,4 +172,7 @@ h1,h2,h3,h4,h5,h6{
       }
     }
   }
+}
+.review-item{
+  border-bottom: 1px solid #ddd;
 }
