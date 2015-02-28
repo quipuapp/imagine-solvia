@@ -1,0 +1,15 @@
+.freelancers-list-section
+  .row.row-full
+    .medium-12.columns
+      .freelancers-list
+        - @professionals.each do |professional|
+          .freelancers-list-item.row
+            .medium-3.columns
+              | foto
+            .medium-3.columns
+              .name= professional.complete_name
+            .medium-3.columns
+              =' number_to_currency(professional.hourly_price)
+              | / hour
+            .medium-3.columns
+              = link_to 'See more', professional
