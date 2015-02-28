@@ -225,6 +225,6 @@ end
 specialties = Specialty.all
 Professional.all.each do |professional|
   (specialties - professional.specialties).shuffle.take(1 + rand(2)).each do |specialty|
-    professional.specialties << specialty
+    #professional.specialties << specialty
   end
 end
