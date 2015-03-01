@@ -7,7 +7,7 @@
       .search-box
         = text_field_tag :name, @term, id: 'autocomplete', placeholder: 'What are you looking for? e.g. plumber, decorator'
     .medium-3.columns
-      .head-user
+      .head-user.talker style="cursor: pointer"
         = image_tag "head-user.png"
 
 - content_for :custom_js do
@@ -22,4 +22,8 @@
         }
       });
       autocompleteInput.focus();
+    });
+
+    $('.talker').click(function(){
+      $('.talk-sidebar').show();
     });

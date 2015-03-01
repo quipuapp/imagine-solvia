@@ -7,5 +7,6 @@ html
 
   body class=body_class
     = yield
+    = render 'layouts/conversations'
     = javascript_include_tag :application
     = yield :custom_js

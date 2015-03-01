@@ -1,0 +1,21 @@
+.talk-sidebar style="display: none"
+  .chat-list
+    .chat-list-title
+      .title
+        span Conversations
+        span.close style="cursor: pointer" = image_tag "close.png"
+
+    = render 'layouts/conversation', name: 'John McNulty', title: 'Providers', image: 'roger',
+      message: 'Hello! I just discovered you could reduce 40% your Internet expenses. Would you be interested?'
+    = render 'layouts/conversation', name: 'Anna Cuesta', title: 'Bookkeeper', image: 'cristina',
+      message: 'We have an interesting tool for freelancers that could trim down your taxes. How does it sound?'
+    = render 'layouts/conversation', name: 'Peter Hans', title: 'Electronics', image: 'jan',
+      message: 'Quick reminder: your new security alarm is on the way. You should receive it by tomorrow!'
+    = render 'layouts/conversation', name: 'Clara Pérez', title: 'Customer support', image: 'iris',
+      message: 'Done! I just enabled the option we talked about. You will receive your invoices on your house community expenses direct to your mail from now on.'
+
+- content_for :custom_js do
+  javascript:
+    $('span.close').click(function(){
+      $('.talk-sidebar').hide();
+    });
