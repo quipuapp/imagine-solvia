@@ -60,22 +60,41 @@ h1,h2,h3,h4,h5,h6{
   background-color: white;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
   .search-box{
+    position: relative;
     input{
       margin: 0;
       font-size: 24px;
-      padding: 22px 15px 22px 42px;
+      padding: 22px 15px 22px 158px;
       border: 0;
       background-color: #eee;
       border-radius: 2px;
       box-shadow: none;
       background-image: url("search-ic.png");
       background-repeat: no-repeat;
-      background-position: left 12px center;
+      background-position: right 15px center;
     }
   }
   .head-user{
     float: right;
     margin-top: 4px;
+  }
+}
+.type-dropdown{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+  height: 100%;
+  line-height: 43px;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.2);
+  padding: 0 32px 0 16px;
+  background-image: url("down-icon.png");
+  background-repeat: no-repeat;
+  background-position: top 19px right 12px;
+  @include transition(all, 0.2s, ease);
+  overflow: hidden;
+  &:hover{
+    height: auto;
   }
 }
 .logo{
