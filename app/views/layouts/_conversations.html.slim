@@ -1,4 +1,4 @@
-.talk-sidebar style="display: none"
+.talk-sidebar
   .chat-list
     .chat-list-title
       .title
@@ -17,5 +17,5 @@
 - content_for :custom_js do
   javascript:
     $('span.close').click(function(){
-      $('.talk-sidebar').hide();
+      $('.talk-sidebar').removeClass('shown', 1000);
     });
