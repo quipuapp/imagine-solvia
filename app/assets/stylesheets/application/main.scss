@@ -43,6 +43,9 @@ body{
   background-color: #eee;
   font-family: 'Franklin Gothic';
   padding-top: 60px;
+  @media screen and(max-width:640px){
+    padding-top: 110px;
+  }
 }
 h1,h2,h3,h4,h5,h6{
   font-family: 'Franklin Gothic';
@@ -77,10 +80,14 @@ h1,h2,h3,h4,h5,h6{
   .head-user{
     float: right;
     margin-top: 4px;
+    @media screen and(max-width:640px){
+      margin-top: -100px;
+    }
   }
 }
 .type-dropdown{
   position: absolute;
+  cursor: pointer;
   left: 0;
   top: 0;
   background: white;
@@ -100,6 +107,10 @@ h1,h2,h3,h4,h5,h6{
 .logo{
   position: relative;
   top: 5px;
+  @media screen and(max-width:640px){
+    margin-bottom: 30px;
+    width: 40%;
+  }
 }
 .filters-section{
   .filter-item{
@@ -109,6 +120,9 @@ h1,h2,h3,h4,h5,h6{
     padding: 10px 0;
     border-bottom: 4px solid transparent;
     @include transition(all, 0.2s, ease);
+    @media screen and(max-width:640px){
+      font-size: 14px;
+    }
     a{
       color: inherit;
       width: 100%;
@@ -270,7 +284,7 @@ h1,h2,h3,h4,h5,h6{
   background-color: #E2E5E6;
 }
 .loader-wrapper{
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   text-align: center;
 }
@@ -280,7 +294,8 @@ h1,h2,h3,h4,h5,h6{
 .landing-wrapper{
   max-width: 1000px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding: 20px;
+  padding-top: 5rem;  
   h2{
     max-width: 640px;
     color: white;
@@ -319,6 +334,9 @@ h1,h2,h3,h4,h5,h6{
   &.shown{
     right: 0;
   }
+  @media screen and(max-width:640px){
+    padding-top: 160px;
+  }
 }
 .chat-list-item{
   font-size: 14px;
@@ -326,6 +344,7 @@ h1,h2,h3,h4,h5,h6{
   display: table;
   width: 100%;
   padding: 10px 0;
+  cursor: pointer;
   .photo{
     display: table-cell;
     padding-right: 15px;
@@ -333,6 +352,9 @@ h1,h2,h3,h4,h5,h6{
     img{
       width: 50px;
     }
+  }
+  &:hover{
+    background-color: #eee;
   }
   .text{
     display: table-cell;
@@ -359,6 +381,17 @@ h1,h2,h3,h4,h5,h6{
   }
   .close{
     float: right;
+  }
+}
+
+@media screen and(max-width:640px){
+  .intro-info{
+    .rating,
+    .response,
+    .distance
+    {
+      display: none !important;
+    }
   }
 }
 
